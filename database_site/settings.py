@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from pathlib import Path
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)ie8gjjjncaa#omkhg8*6yn57w4v%!poyh0gxqr8z&fkjmo2p0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://financedatabase.herokuapp.com/']
 
 
 # Application definition
@@ -84,12 +85,12 @@ WSGI_APPLICATION = 'database_site.wsgi.application'
 # }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'finance',
-        'USER': 'postgres',
-        'PASSWORD': 'ruban199269',
-        'HOST': 'localhost'
-        
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd2i642lkrhm5gv',
+        'USER': 'ulghehwtbqlmwf',
+        'PASSWORD': 'a078a19daec757f7a1f8c527dca0673d6deac25697860d0127e1b302a70ec11f',
+        'HOST': 'ec2-44-197-88-60.compute-1.amazonaws.com',
+        'PORT' : '5432'
     }
 }
 
@@ -136,7 +137,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,"media")
+django_heroku.settings(locals())
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
