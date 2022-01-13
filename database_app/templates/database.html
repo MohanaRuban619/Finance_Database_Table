@@ -44,9 +44,9 @@
                     <th>PIC_ID_PROOF</th>
                     <th>pic_Cheque</th>
                 </tr>
-                {% for data in datas %}
+                
                 <tr>
-                    
+                   {% for data in datas %} 
                     <td>{{data.id}}</td>
                     <td>{{data.Name}}</td>
                     <td>{{ data.Principal_Amount }}</td>
@@ -80,9 +80,9 @@
                     
 
 
-
+                    {% endfor %}
                 </tr>
-                {% endfor %} 
+                 
             
             </table> 
             
