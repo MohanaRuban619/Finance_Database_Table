@@ -24,7 +24,7 @@ from django.urls import include
 urlpatterns = [
     # path('', include("database_app.urls")),
     path('admin/', admin.site.urls),
-    path('',views.datab,name='datas'),
+    path('',views.datab,name='datab'),
     # path('',views.datae,name='datae')
 ]
 urlpatterns = urlpatterns + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
