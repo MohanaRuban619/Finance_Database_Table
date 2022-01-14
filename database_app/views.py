@@ -36,7 +36,7 @@ def datab(request):
     #     print("Success")
     # else:
         # print("Error")
-    return render(request,'data.html',{})
+#     return render(request,'data.html',{})
     # lis = []
     # lis.append(request.POST["Id_no"])
     # lis.append(request.POST["Name"])
