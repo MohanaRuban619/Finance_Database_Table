@@ -1,0 +1,24 @@
+CREATE TABLE IF NOT EXISTS public.database_app_destination
+(
+    id bigint NOT NULL DEFAULT nextval('database_app_destination_id_seq'::regclass),
+    "Name" character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    "Principal_Amount" character varying(11) COLLATE pg_catalog."default" NOT NULL,
+    "Intrest_Rate" character varying(5) COLLATE pg_catalog."default" NOT NULL,
+    "Given_Intrest" character varying(8) COLLATE pg_catalog."default" NOT NULL,
+    "Given_Principle" character varying(11) COLLATE pg_catalog."default" NOT NULL,
+    "Pending_Intrest" character varying(8) COLLATE pg_catalog."default" NOT NULL,
+    "Balance_Principle_Amount" character varying(11) COLLATE pg_catalog."default" NOT NULL,
+    "Case_N0" character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    "Case_Type" character varying(10) COLLATE pg_catalog."default" NOT NULL,
+    "Case_link" character varying(200) COLLATE pg_catalog."default" NOT NULL,
+    "Person_Photo" character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    "Pic_promissory_note" character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    "Pic_Id_Proof" character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    "pic_Cheque" character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT database_app_destination_pkey PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.database_app_destination
+    OWNER to postgres;
