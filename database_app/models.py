@@ -11,10 +11,10 @@ class Destination(models.Model):
     Case_N0 = models.CharField(max_length=50)
     Case_Type = models.CharField(max_length=10)
     Case_link = models.CharField(max_length=200)
-#     Person_Photo = models.ImageField(upload_to='pics')
-#     Pic_promissory_note = models.ImageField(upload_to='pics')
-#     Pic_Id_Proof = models.ImageField(upload_to='pics')
-#     pic_Cheque = models.ImageField(upload_to='pics')
+    Person_Photo = models.ImageField(upload_to='pics')
+    Pic_promissory_note = models.ImageField(upload_to='pics')
+    Pic_Id_Proof = models.ImageField(upload_to='pics')
+    pic_Cheque = models.ImageField(upload_to='pics')
 
     def __str__(self):
         return self.Name
