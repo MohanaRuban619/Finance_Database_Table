@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from pathlib import Path
+import dj_database_url
 # import django.heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -92,7 +93,9 @@ DATABASES = {
         
     }
 }
-
+DATABASES['default'] = dj_database_url.config(conn_max_age=600)
+DATABASES['default'] = dj_database_url.config(default='postgres://gtioraubihmtcb:8721eea52aa9cb0db91a5eb2b6d603f2a1a4bed9a227cd938c95ef9cae591879@ec2-3-225-41-234.compute-1.amazonaws.com:5432/d5rrrmqmmjkkag')
+DATABASES['default'] = dj_database_url.parse('postgres://gtioraubihmtcb:8721eea52aa9cb0db91a5eb2b6d603f2a1a4bed9a227cd938c95ef9cae591879@ec2-3-225-41-234.compute-1.amazonaws.com:5432/d5rrrmqmmjkkag', conn_max_age=600)
 # host='localhost'
 #     user='ruban'
 #     password='ruban123'
