@@ -85,10 +85,10 @@ WSGI_APPLICATION = 'database_site.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'finance',
-        'USER': 'postgres',
-        'PASSWORD': 'ruban199269',
-        'HOST': 'localhost'
+        'NAME': 'd5rrrmqmmjkkag',
+        'USER': 'gtioraubihmtcb',
+        'PASSWORD': '8721eea52aa9cb0db91a5eb2b6d603f2a1a4bed9a227cd938c95ef9cae591879',
+        'HOST': 'ec2-3-225-41-234.compute-1.amazonaws.com'
         
     }
 }
