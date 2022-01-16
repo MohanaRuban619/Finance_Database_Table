@@ -1,6 +1,6 @@
-CREATE TABLE IF NOT EXISTS public.database_app_destination
+CREATE TABLE IF NOT EXISTS public.database_app_customers
 (
-    id bigint NOT NULL DEFAULT nextval('database_app_destination_id_seq'::regclass),
+    id bigint NOT NULL DEFAULT nextval('database_app_customers_id_seq'::regclass),
     "Name" character varying(100) COLLATE pg_catalog."default" NOT NULL,
     "Principal_Amount" character varying(11) COLLATE pg_catalog."default" NOT NULL,
     "Intrest_Rate" character varying(5) COLLATE pg_catalog."default" NOT NULL,
@@ -15,10 +15,10 @@ CREATE TABLE IF NOT EXISTS public.database_app_destination
     "Pic_promissory_note" character varying(100) COLLATE pg_catalog."default" NOT NULL,
     "Pic_Id_Proof" character varying(100) COLLATE pg_catalog."default" NOT NULL,
     "pic_Cheque" character varying(100) COLLATE pg_catalog."default" NOT NULL,
-    CONSTRAINT database_app_destination_pkey PRIMARY KEY (id)
+    CONSTRAINT database_app_customers_pkey PRIMARY KEY (id)
 )
 
 TABLESPACE pg_default;
 
-ALTER TABLE IF EXISTS public.database_app_destination
+ALTER TABLE IF EXISTS public.database_app_customers
     OWNER to postgres;
