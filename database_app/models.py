@@ -14,7 +14,7 @@ class Destination(models.Model):
     Person_Photo = CloudinaryField('Person_Photo')
     Pic_promissory_note = CloudinaryField('Pic_promissory_note')
     Pic_Id_Proof = CloudinaryField('Pic_Id_Proof')
-    pic_Cheque = CloudinaryField('pic_Cheque')
+    Pic_Cheque = CloudinaryField('Pic_Cheque')
 
     def __str__(self):
         return self.Name
