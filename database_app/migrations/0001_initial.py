@@ -29,7 +29,7 @@ class Migration(migrations.Migration):
                 ('Person_Photo', cloudinary.models.CloudinaryField(max_length=255, verbose_name='Person_Photo')),
                 ('Pic_promissory_note', cloudinary.models.CloudinaryField(max_length=255, verbose_name='Pic_promissory_note')),
                 ('Pic_Id_Proof', cloudinary.models.CloudinaryField(max_length=255, verbose_name='Pic_Id_Proof')),
-                ('Pic_Cheque', cloudinary.models.CloudinaryField(max_length=255, verbose_name='Pic_Cheque')),
+                ('pic_Cheque', cloudinary.models.CloudinaryField(max_length=255, verbose_name='pic_Cheque')),
             ],
         ),
     ]
