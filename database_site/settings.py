@@ -144,8 +144,8 @@ django_heroku.settings(locals())
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR,"media")
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,"media")
 cloudinary.config( 
   cloud_name = "finance-database-image", 
   api_key = "776452237325182", 
