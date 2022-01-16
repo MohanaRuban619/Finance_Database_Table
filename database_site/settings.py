@@ -139,6 +139,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,"media")
+cloudinary.config( 
+  cloud_name = "finance-database-image", 
+  api_key = "776452237325182", 
+  api_secret = "2IbPdXORGO4enYIx-PDdOqSM3UI" 
+)
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
