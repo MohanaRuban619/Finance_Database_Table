@@ -2,10 +2,10 @@ from typing import ValuesView
 from django.http.request import validate_host
 from django.http.response import HttpResponse
 from django.shortcuts import render
-from .models import Customers
+from .models import Customer
 def datab(request):
     
-    datas = Customers.objects.all()
+    datas = Customer.objects.all()
     
     return render(request,'database.html',{'datas':datas})
 # def datae(request):
