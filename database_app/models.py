@@ -1,6 +1,6 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
-class Destination(models.Model):
+class Customers(models.Model):
     Name = models.CharField(max_length=100)
     Principal_Amount = models.CharField(max_length=11)
     Intrest_Rate = models.CharField(max_length=5)
