@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS public.database_app_destination
     "Person_Photo" character varying(100) COLLATE pg_catalog."default" NOT NULL,
     "Pic_promissory_note" character varying(100) COLLATE pg_catalog."default" NOT NULL,
     "Pic_Id_Proof" character varying(100) COLLATE pg_catalog."default" NOT NULL,
-    "Pic_Cheque" character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    "pic_Cheque" character varying(100) COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT database_app_destination_pkey PRIMARY KEY (id)
 )
 
