@@ -147,7 +147,7 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,"media")
 cloudinary.config( 
-  cloud_name = "finance-database-image", 
+  cloud_name = "picturebaskets", 
   api_key = "776452237325182", 
   api_secret = "2IbPdXORGO4enYIx-PDdOqSM3UI" 
 )
