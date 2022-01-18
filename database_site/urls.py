@@ -23,7 +23,7 @@ from django.conf.urls.static import static
 from django.contrib.auth.views import LoginView
 urlpatterns = [
     path('', LoginView.as_view(),name='datas'),
-    path('login/##%%%',views.datab,name='datas'),
+    path('login/database/',views.datab,name='datas'),
     path('admin/', admin.site.urls),
    
 ]
